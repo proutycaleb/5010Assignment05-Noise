@@ -1,1 +1,27 @@
 # 5010Assignment05-Noise
+
+## Concepts
+### Concept 1: 2d Flower
+
+Based off of the game _Flower_ by Thatgamecompany. A field of flowers is randomly generated, and as the player drags their mouse over flowers they bloom 
+into a cloud of petals the follow the players mouse around as though swirling in the wind
+
+#### Plain English directions
+
+1. Draw a set of flowers on the canvas. Each flower has the attributes of its randomized location and color, and is styalized to look like a flower
+2. When the cursor enters a certain proximity to a flower, the flower disappears and spawns a random number of petals.
+3. The petals orbit around the cursor, with random variations in speed and distance
+4. When the cursor moves, petals follow it after a short delay, forming a trail of swirling petals
+
+### Concept 2: Rock climbing 
+
+Based of the practice of route setting for indoor climbing gyms. The player and program take turns placing climbing holds on a wall, mimicking creating a climbing route.
+Placemnet of holds is constrained based on last placed hold
+
+#### Plain English Directions
+
+1. Draw the rock wall as the background. To create the effect, use lines with directional shading to give the appearance of panaling
+2. Create a start hold in the bottom center of the wall. A hold will be a random n-gon inscribed within a set radius. The color of all the holds will also be chosen at this point
+3. The player places a hold on the wall based on their cursor location with the constraint that it must be within a certain radius of the start hold. 
+4. The program places the next hold, following the same rules.
+5. This repeates until 10 total holds are placed
