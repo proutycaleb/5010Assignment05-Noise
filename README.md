@@ -1,27 +1,21 @@
 # 5010Assignment05-Noise
 
-## Concepts
-### Concept 1: 2d Flower
-
-Based off of the game _Flower_ by Thatgamecompany. A field of flowers is randomly generated, and as the player drags their mouse over flowers they bloom 
-into a cloud of petals the follow the players mouse around as though swirling in the wind
-
-#### Plain English directions
-
-1. Draw a set of flowers on the canvas. Each flower has the attributes of its randomized location and color, and is styalized to look like a flower
-2. When the cursor enters a certain proximity to a flower, the flower disappears and spawns a random number of petals.
-3. The petals orbit around the cursor, with random variations in speed and distance
-4. When the cursor moves, petals follow it after a short delay, forming a trail of swirling petals
-
-### Concept 2: Rock climbing 
+## Concept: Rock Climbing Route Setting
 
 Based of the practice of route setting for indoor climbing gyms. The player and program take turns placing climbing holds on a wall, mimicking creating a climbing route.
-Placemnet of holds is constrained based on last placed hold
 
-#### Plain English Directions
+### Plain English Directions
 
-1. Draw the rock wall as the background. To create the effect, use lines with directional shading to give the appearance of panaling
-2. Create a start hold in the bottom center of the wall. A hold will be a random n-gon inscribed within a set radius. The color of all the holds will also be chosen at this point
-3. The player places a hold on the wall based on their cursor location with the constraint that it must be within a certain radius of the start hold. 
-4. The program places the next hold, following the same rules.
-5. This repeates until 10 total holds are placed
+1. Draw the rock wall as the background.
+    1. Draw a grey rectangle of any dimension. Add a slight gradient from top -> bottom, light -> dark
+    2. Divide the canvas into a set of vertical collums of randomized width
+    3. Within each collum, draw a segmented zig-zagging line from top to bottom, representing the panels of the climbing wall. the length and angle of the line segments is random constrained by the collums
+4. Create the hold generator
+    1. Choose a color for the holds
+    2. Generate a n-gon with random amount of sides
+    3. Offset vertexes by a random amount
+    4. Constrain n-gon within two cocentric circles 
+6. Create a start hold in the bottom center of the wall. 
+7. The player places a hold on the wall based on their cursor location with the constraint that it must be within a certain radius of the start hold. 
+8. The program places the next hold, following the same rules.
+9. This repeates until 10 total holds are placed
