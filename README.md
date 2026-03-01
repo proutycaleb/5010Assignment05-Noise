@@ -4,6 +4,17 @@
 
 Based of the practice of route setting for indoor climbing gyms. The player and program take turns placing climbing holds on a wall, mimicking creating a climbing route.
 
+### Reflection
+
+This project has concluded in a strange way in that I felt that I fully suceeded in some areas, and fully didn't in others. 
+
+To start with the aspects I'm proud of, I really like how the code works overall. It does the thing I wanted it to do, even if that didn't fully align with the goals of the assignment. I'm also proud I figured out how to use classes! I think I have a much stronger understanding of how methods and classes work, and why they are important. Altering the code I had already created to work as a class in a seperate method was hard but worth while. 
+
+One area I didn't suceed in was working with arrays. I feel like the functionaliy is close, but my understanding is not. I hope I'll have more opportunity to explore that aspect of coding. I also didn't really use noise in my project. It does incorperaet randomness, but not noise and particles. 
+
+Overall a good learning experience.
+
+
 ### Plain English Directions
 
 1. Draw the rock wall as the background.
